@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper container bg-light border mt-5">
+      <header class="header-section">
+        <h1 class="text-center p-3">Calculator</h1>
+      </header>
+      <main class="main-section">
+        <div class="display-section p-3">
+          <input
+            type="text"
+            id="calculator-display"
+            class="calculator-display form-control text-end fs-1"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg"
+            disabled
+          />
+        </div>
+        <div class="button-section row justify-content-center gap-2">
+          <div class="numbers col-9 row row-cols-3">
+            <button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(1)"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(2)"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(3)"
+            >
+              3</button
+            ><button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(4)"
+            >
+              4</button
+            ><button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(5)"
+            >
+              5</button
+            ><button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(6)"
+            >
+              6</button
+            ><button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(7)"
+            >
+              7</button
+            ><button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(8)"
+            >
+              8</button
+            ><button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(9)"
+            >
+              9</button
+            ><button
+              type="button"
+              class="btn btn-primary rounded-circle"
+              onclick="calculator(0)"
+            >
+              0
+            </button>
+          </div>
+          <div class="operators col-3 row row-cols-1">
+            <button
+              type="button"
+              class="addition btn btn-secondary rounded-circle"
+              onclick="calculator(`addition`)"
+            >
+              +</button
+            ><button
+              type="button"
+              class="subtraction btn btn-secondary rounded-circle"
+              onclick="calculator(`subtraction`)"
+            >
+              -</button
+            ><button
+              type="button"
+              class="multiplication btn btn-secondary rounded-circle"
+              onclick="calculator(`multiplication`)"
+            >
+              *</button
+            ><button
+              type="button"
+              class="division btn btn-secondary rounded-circle"
+              onclick="calculator(`division`)"
+            >
+              /</button
+            ><button
+              type="button"
+              class="modulus btn btn-secondary rounded-circle"
+              onclick="calculator(`modulus`)"
+            >
+              %</button
+            ><button
+              type="button"
+              class="equal btn btn-warning rounded-circle"
+              onclick="calculator(`equal`)"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+      integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
